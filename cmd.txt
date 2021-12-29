@@ -1,0 +1,17 @@
+DB
+---------------------------------------
+|   name   |   code    |  department  |
+|----------|-----------|--------------|
+|          |           |              |
+|          |           |              |
+---------------------------------------
+
+
+FLASK_ENV=development FLASK_APP=subject_db.py flask run
+
+
+
+http -v POST localhost:5000/insert name="과목이름" code="코드" department="학과이름"
+http -v POST localhost:5000/delete name="과목이름" code="코드" department="학과이름"
+http -v GET localhost:5000/show
+http -v GET localhost:5000/status
